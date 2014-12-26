@@ -1,0 +1,155 @@
+
+<?php  
+if ($_POST) { 
+    echo 'Sent'; die;  
+    mail($to,$subject,$comments,$headers); 
+} 
+?> 
+
+	<!--
+	*** Website by Adam Freemer [a at freemer dot com].
+	*** All related images and sound files are property of Adam Freemer Music.
+	-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	   	<meta charset="utf-8">
+	   	<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Adam Freemer Dot Com</title>			
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.bxslider.css">
+		<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/svwp_style.css" type="text/css" media="screen" /> 
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/project.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+
+			<div id="top-bar">	
+
+			</div>		
+
+			<div id="logo-bar">
+
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="#contact">Contact</a></li>	
+					<li><a href="#photos">Photos</a></li>
+					<li><a href="#music">Music</a></li>					
+					<li><a href="#home">Home</a></li>					
+					<div class="clear"></div>
+				</ul>
+			</nav>
+
+			<div id="middle-section">	
+
+				<div id="home">
+				<p></p>
+				</div>
+
+				<div id="bio">
+					<div id="title">Adam Freemer</div>	
+
+					<p id="p1">After picking up his first pair of turntables in 1995, and later his first copy of ProTools back in 1998, Adam has gone on to produce chart topping singles and remixes while touring the globe several times over as a DJ. Adam's first big break came in 2000 when Danny Tenaglia chose Adam as a fill in for him at his now infamous “Be Yourself” party in New York. The same year, Adam was chosen from nearly 500 DJ’s from all over the world to play at the now iconic Twilo nightclub in a first of its kind talent scouting DJ contest. Adam later went on to play consistently in New York and his home town of Philadelphia, and from there all over the globe.</p>
+										
+					<p>Adam’s first major single, H2O, was released on TWISTED records back in 2002. Adam has since gone on to release many chart topping hits including "Underground, Baby!", which achieved top 5 download status on Beatport. On the remix front, with multiple Billboard charting remixes under his belt including two #1 Billboard remixes of the legendary Yoko Ono, and a long list of remixes by respected names such as Danny Tenaglia, DJ Chus, Cevin Fisher, D-Formation and Mistress Barbara, Adam has solidified his standing as a respected dance music producer and remixer. In 2008 Adam started his own label, Mecha Recordings, and besides releasing his own work, released remixes and singles from artists such as Lance DeSardi, D-Formation, DJ Simi and D-Unity. Just recently, Adam remixed the all-time classic house track "Be Yourself", originally produced by Celeda and Danny Tenaglia, which received strong reviews and a firm foothold in the Beatport house music chart.</p>
+										
+					<p id="p3">Adam continues to evolve as a DJ incorporating new sounds into his sets which have their roots in techno, house and soulful deep grooves. Adam’s unique sets include original productions, private remixes, edits and exclusive sounds and samples spanning his production and remix career. As a DJ, Adam has criss crossed North America many times over to play at venues such as Ruby Skye in San Francisco, Rise in Boston and Stereo in Montreal. On a global level, the list continues from all over South America to Europe and throughout Asia. </p>
+						
+
+					<h2>DJ &nbsp; | &nbsp; Producer &nbsp; | &nbsp; Sound Engineer</h2>					
+				</div>
+
+				<div id="music">
+					<p>
+					<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F14587"></iframe>
+					</p>					
+				</div>
+
+				<div id="photos">				
+					
+					<ul class="bxslider">
+						<li><img src="images/photos/photo4.jpg"/></li>
+					  	<li><img src="images/photos/photo2.jpg"/></li>
+					  	<li><img src="images/photos/photo5.jpg"/></li>
+					  	<li><img src="images/photos/photo6.jpg"/></li>
+					  	<li><img src="images/photos/photo3.jpg"/></li>
+					  	<li><img src="images/photos/photo7.jpg"/></li>
+					  	<li><img src="images/flyers/flyer1.jpg"/></li>
+					  	<li><img src="images/flyers/flyer2.jpg"/></li>
+					  	<li><img src="images/flyers/flyer3.jpg"/></li>
+						<li><img src="images/flyers/flyer4.jpg"/></li>
+						<li><img src="images/flyers/flyer5.jpg"/></li>
+						<li><img src="images/flyers/flyer6.jpg"/></li>
+						<li><img src="images/flyers/flyer7.jpg"/></li>
+						<li><img src="images/flyers/flyer8.jpg"/></li>
+						<li><img src="images/flyers/flyer9.jpg"/></li>		
+						<li><img src="images/flyers/flyer10.jpg"/></li>						
+						<li><img src="images/flyers/flyer11.jpg"/></li>
+						<li><img src="images/flyers/flyer12.jpg"/></li>
+						<li><img src="images/flyers/flyer13.jpg"/></li>
+						<li><img src="images/flyers/flyer14.jpg"/></li>
+					</ul>
+
+
+				</div>
+
+				<div id="contact">
+					<div id="message">Your message has been sent.<br /><br /></div> 
+
+					<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1"> 
+
+					     <p>Name<br/>
+					     <input name="name_r" type="text" class="required" id="name_r" /> 
+					     </P>
+
+					     <p>E-mail<br/> 
+					     <input name="email_r" type="text" class="required email" size="30" /> 
+					     </p>
+
+					     <p>Comments<br/> 
+					     <textarea name="comments_r" cols="25" rows="5" class="required"></textarea> <br/>
+					     <input name="Submit" id="submit" type="submit" class="submit_go" value="Submit" />
+
+					   
+					      </p>      
+					</form>
+
+					<div id="buffer">				
+					<h1></h1>
+					</div>
+
+				</div>
+
+			</div>		
+
+		<div id="bottom-bar">	
+
+				<div id="legal">
+					<p>Website by Adam Freemer &copy; 2013</p>
+				</div>
+					
+				<div id="socialMedia">
+						<ul><li class="facebook"><a href="http://www.facebook.com/adamfreemer.music" target="_blank"></a>
+			            <li class="twitter"><a href="http://www.twitter.com/AdamFreemer" target="_blank"></a></li>
+			            <li class="email"><a href="mailto:a@freemer.com" target="_blank"></a></li>
+			            <li class="youtube"><a href="http://www.youtube.com/user/AdamFreemerMusic" target="_blank"></a></li>
+			            <div id="clear">
+					</ul>
+				</div>	
+		</div>	
+
+	</body>
+
+</html>

@@ -1,0 +1,489 @@
+/* 
+Website and all related code developed and written by Adam Freemer
+Contact: a@freemer.com
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* Fonts                  
+/*******************************************/
+@font-face {
+    font-family: Orbitron;
+    src: url("../fonts/Orbitron.ttf");
+}
+
+@font-face {
+    font-family: Ostrich-Italic;
+    src: url("../fonts/OstrichSansInline-Italic.otf");
+}
+
+
+@font-face {
+    font-family: Strausua;
+    src: url("../fonts/Strausua.ttf");
+}
+
+
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../images/bg_image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    background-attachment: fixed;
+}
+
+#top-bar {
+    position: fixed;
+    margin-left: 4px;
+    padding-left: 5px;
+    top: 5px;
+    width: 98%;
+    height: 100px;
+    right: 11px;
+    background-color: rgb(16, 16, 16);
+    opacity: 1;
+    box-shadow: 0px 3px 3px rgb(34, 34, 34);
+    z-index: 20;
+/*        border-style: solid;
+    border-color: rgba(100,100,100,.1);
+    border-width: 1px;*/
+}
+
+#logo-bar {
+    position: fixed;
+    left: 25px;
+    top: 12px;
+    width: 300px;
+    height: 83px;
+    opacity: .9;
+    background-image: url("../images/logo-bar-minus.png");
+    background-repeat: no-repeat;
+    z-index: 25;    
+}
+
+#bottom-bar {
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    background-color: #000000;
+    opacity: 1;
+    position: fixed;
+}
+
+#legal {
+    bottom: 4px;
+    color: white;
+    font-family: verdana;
+    font-size: 0.7em;
+    left: 1.5em;
+    margin: 0 auto;
+    position: fixed;
+    opacity: 0.7;
+}
+
+/******************************************
+/* NAV LAYOUT                   
+/*******************************************/
+
+nav {   
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    color: #aaaaaa;
+    width: 80%;
+    z-index: 25;
+}
+
+nav li {
+    float: right;
+    text-align: center;
+    font-size: 14px;
+    list-style-type: none;
+    display: block;
+}
+
+nav li a {
+    font-family: Verdana;
+    background-image: url('../images/nav_static.png');
+    background-position: middle;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: -30px;
+    padding: 10px 0 10px 0;    
+    width: 140px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    color: #555555;
+    opacity: 0.9;
+}
+
+
+/******************************************
+/* Body Content Shtuff               
+/*******************************************/
+
+#middle-section {
+    text-align: center;
+    width: 90%;
+    height: 800px;
+    color: white;
+    margin: 0 auto;
+}
+
+#home {
+
+    height: 40px;
+    margin: 0 auto;
+}
+
+#bio {
+    padding-top: 0px;
+    font-family: Verdana;
+    font-weight: 50;
+    font-size: 14px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 90px;
+    text-align: justify;
+}
+
+#music {
+    padding-top: 120px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 700px;
+}
+
+#photos {
+    margin: 0 auto;
+    padding-top: 140px;
+    margin-top: 700px;
+    width: 700px;
+}
+#contact {
+    font-family: Michroma;
+    margin: 0 auto;
+    margin-top: 700px;
+    padding-top: 150px;
+    margin-top: 700px;
+    padding-bottom: 500px;
+}
+
+/*******************************************
+/* Bio Style
+/******************************************/
+
+
+#title {
+    font-family: Michroma;
+    text-transform: uppercase;
+    text-decoration: bold;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: -1px;
+    padding-bottom: -1px;
+}
+    
+#p1 {
+    padding-top: 12px;
+    margin-top: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-width: 1px 0px 0px 0px;
+}
+
+#p3 {
+    padding-bottom: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-width: 0px 0px 1px 0px;
+    margin-bottom: 1px;
+}
+
+h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    letter-spacing: 0.2em;
+    font-family: Michroma;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: right;
+}
+
+
+
+#bio p {
+
+}
+
+iframe {
+    width: 75%;
+    height: 500px;
+}
+
+/******************************************
+/* Music Player Shtuff       
+/*******************************************/
+
+
+
+/******************************************
+/* Social Media Button Shtuff              
+/*******************************************/
+
+#socialMedia{
+    height: 40px;
+    float: right;
+    margin: 0 auto;
+    margin-right: 40px;
+    padding-right: 5px;
+}
+
+#socialMedia ul li {
+    display:inline-block;
+    margin: 0 auto;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px; 
+    text-indent:-9999em;
+    float: left;
+
+}
+
+#socialMedia ul li a {
+    height: 30px;
+    width: 30px;
+    display:block;
+}
+
+#socialMedia ul li.facebook {
+     background:url('../images/socialNav.png') 0px 70px;
+}
+#socialMedia ul li.twitter {
+     background:url('../images/socialNav.png') -31px 70px; 
+}
+
+#socialMedia ul li.email {
+     background:url('../images/socialNav.png') -61px 70px; 
+}
+
+#socialMedia ul li.youtube {
+     background:url('../images/socialNav.png') -91px 70px; 
+}
+/* Hover */
+#socialMedia ul li.facebook:hover {
+     opacity: 0.5;
+}
+
+#socialMedia ul li.twitter:hover {
+     opacity: 0.5;
+}
+
+#socialMedia ul li.email:hover {
+     opacity: 0.5;
+}
+
+#socialMedia ul li.youtube:hover {
+     opacity: 0.5;
+}
+
+.error { 
+    display: block; 
+    color: red; 
+    font-style: italic; 
+} 
+
+#message { 
+    display:none; 
+    font-size:15px; 
+    font-weight:bold; 
+    color:#333333; 
+} 
+
+
+#buffer {
+    width: 100%;
+    height: 50px;
+}
+
+
+/******************************************
+/* Responsive Design Shtuff              
+/*******************************************/
+@media screen and (max-width: 720px) {
+
+    nav {
+        position: fixed;
+        top: 15px;
+        text-align: center;
+        color: #aaaaaa;
+        width: 100%;
+        z-index: 25;
+        margin: 0 auto;
+        right: 20px;
+    }
+
+    nav li {
+        float: none;
+        display: inline-block;
+
+    }
+
+    nav {
+
+    }
+
+    nav li a {
+        background-image: none;
+        color: white;
+        text-transform: uppercase;
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        font-size: 1.15em;
+        padding: 0 10px;
+    }
+
+    #home h1 {
+      font-size: 2em;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    body {
+      /*background-color: red;*/
+    }
+
+    #top-bar {
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 80px;
+        box-shadow: 0 0 0 0;
+    }
+
+    #logo-bar {
+        opacity: 0;
+    }
+
+    #photos {
+        width: 80%;
+
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    nav {
+        top: 0;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav li a {
+
+        padding: .5em 0 .5em 0;
+        font-size: 1.5em;
+
+    }
+
+    #top-bar {
+
+        height: 220px;
+
+    }
+
+    #bio {
+        padding-top: 120px;
+        margin-top: 90px;
+    }
+
+    #music {    
+        padding-top: 210px;
+        margin-top: 700px;
+    }
+
+    #photos {
+
+        padding-top: 230px;
+        margin-top: 740px;
+
+    }
+    #contact {
+        padding-top: 180px;
+        margin-top: 720px;
+        padding-bottom: 400px;
+    }
+
+    #legal {
+        opacity: 0;
+    }
+
+    #socialMedia ul li {
+        margin-right: 0;
+    }
+
+    #socialMedia ul li.facebook {
+    margin-right: 10px;
+    }
+    #socialMedia ul li.twitter {
+    margin-right: 10px;
+    }
+
+    #socialMedia ul li.email {
+    margin-right: 10px;
+    }
+
+    #socialMedia ul li.youtube {
+    margin-right: 10px;
+    }
+
+}
+
+
+
+
+
